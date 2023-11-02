@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expense Tracker App</title>
+    <link rel="stylesheet" href="/assets/css/expense_tracker.css" />
+  </head>
+  <body>
+    <h1>Expense Tracker App</h1>
+    <div class="Category_section">
+      <label for="Category_select">Category:</label>
+      <select name="" id="Category_select">
+        <option value="food & beverage">food & beverage</option>
+        <option value="Chicken & chips">Chicken & chips</option>
+        <option value="bread & egg">bread & egg</option>
+        <option value="carrot">carrot</option>
+        <option value="fish">fish</option>
+      </select>
+      <label for="Category_amount">Amount</label>
+      <input type="number" name="number" id="Category_amount" />
+      <label for="Category_date">Date</label>
+      <input type="date" name="date" id="Category_date" />
+      <button id="Addbtn">Add</button>
+    </div>
+    <div class="expense_list">
+      <h2>Expense List</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Category</th>
+            <th>Amount</th>
+            <th>Date</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+
+        <tbody id="table_body"></tbody>
+        <tfoot>
+          <td>Total:</td>
+          <td id="total_amount"></td>
+          <td></td>
+          <td></td>
+        </tfoot>
+      </table>
+    </div>
+  </body>
+  <script src="/assets/js/expense_tracker.js"></script>
+</html>
